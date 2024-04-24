@@ -1,13 +1,16 @@
 import random
 from typing import Any, List
 
+
 # Custom exception class for when the queue is full
 class QueueFullException(Exception):
     pass
 
+
 # Custom exception class for when the queue is empty
 class QueueEmptyException(Exception):
     pass
+
 
 # Queue class
 class Queue:
