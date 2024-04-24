@@ -1,7 +1,10 @@
-```markdown
 # Queue Class Implementation in Python
 
 This repository contains an implementation of a Queue data structure in Python. The Queue follows the FIFO (First In, First Out) principle and is implemented with additional features and constraints.
+
+## Requirements
+
+- Python 2.6+
 
 ## Features
 
@@ -33,10 +36,6 @@ print(q.get_element())  # Output: 5
 # Shuffle the Queue
 q.shuffle_queue()
 ```
-
-## Requirements
-
-- Python 3.6+
 
 ## Contributing
 
