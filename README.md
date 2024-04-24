@@ -6,6 +6,10 @@ This repository contains an implementation of a Queue data structure in Python. 
 
 - Python 2.6+
 
+## Installation
+
+Clone the repository and navigate to the project directory. The project does not require any additional libraries outside the Python Standard Library.
+
 ## Features
 
 - The Queue class is initialized with two parameters: `max_queue_length` and `min_queue_length`. These parameters define the maximum and minimum number of elements that the queue can hold.
@@ -14,6 +18,13 @@ This repository contains an implementation of a Queue data structure in Python. 
 - The `add_elements` method is similar to `add_element`, but it allows adding multiple elements at once.
 - The `get_element` method is used to retrieve an element from the queue.
 - The `shuffle_queue` method is used to randomly rearrange the elements in the queue.
+
+## Error Handling
+
+The Queue class raises two custom exceptions:
+
+- `QueueFullException`: This exception is raised when an attempt is made to add an element to a queue that has reached its maximum length.
+- `QueueEmptyException`: This exception is raised when an attempt is made to retrieve an element from an empty queue.
 
 ## Usage
 
