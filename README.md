@@ -17,6 +17,7 @@ Clone the repository and navigate to the project directory. The project does not
 - The `add_element` method is used to add a single element to the queue.
 - The `add_elements` method is similar to `add_element`, but it allows adding multiple elements at once.
 - The `get_element` method is used to retrieve an element from the queue.
+- The `get_elements` method retrieves a specified number of elements from the queue starting from a given index. It also has an option to remove the retrieved elements from the queue.
 - The `shuffle_queue` method is used to randomly rearrange the elements in the queue.
 
 ## Error Handling

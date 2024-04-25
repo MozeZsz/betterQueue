@@ -52,6 +52,15 @@ class Queue:
         else:
             return self.content[index]
 
+    def get_elements(self, index: int = 0, num_elements: int = 1, remove_elements: bool = True) -> List[Any]:
+        if (self.get_queue_length() + num_elements) < self.minQueueLength:
+            raise QueueEmptyException(
+                f"Queue is less than min length of {self.minQueueLength}. Change minQueueLength if desired.")
+        elements = []
+        for i in range(num_elements):
+            elements.append(self.get_element(index, remove_elements))
+        return elements
+
     # Shuffle the elements in the queue
     def shuffle_queue(self) -> None:
         random.shuffle(self.content)
